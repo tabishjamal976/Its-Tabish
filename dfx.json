@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hang_backend": {
+      "main": "src/hang_backend/main.mo",
+      "type": "motoko"
+    },
+    "hang_frontend": {
+      "dependencies": [
+        "hang_backend"
+      ],
+      "source": [
+        "src/hang_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hang_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
